@@ -12,7 +12,7 @@ basic zoom is z16. It seems that this exersise makes sence for zooms z13-z18
 @water: #151F34 ;// dark blue for all water: lake, rivers and streams.
 
 Map {
-  background-color: #b8dee6;
+  background-color: @water;
 }
 
 #countries {
@@ -24,7 +24,7 @@ Map {
   //polygon-fill: #817955;
   polygon-pattern-file: url('textures/ground_z16.png');
 }
-
+ 
 #osm {
   [natural='water']{
     polygon-fill: @water;
@@ -32,12 +32,12 @@ Map {
   
   [natural='wood'],[amenity='park']{
     //polygon-fill: #2D5F33;
-    [zoom>=16]{
-      polygon-pattern-file: url('textures/wood_leaftype_unknown_z16.png');
-    }  
-    [zoom<16]{
-      polygon-pattern-file: url('textures/wood_leaftype_unknown_z13.png');
-    }  
+    [zoom>=17]{ polygon-pattern-file: url('textures/wood_leaftype_unknown_z17.png'); }  
+    [zoom=16]{ polygon-pattern-file: url('textures/wood_leaftype_unknown_z16.png'); }  
+    [zoom=15] { polygon-pattern-file: url('textures/wood_leaftype_unknown_z15.png'); }  
+    [zoom=14] { polygon-pattern-file: url('textures/wood_leaftype_unknown_z14.png'); }  
+    [zoom=13] { polygon-pattern-file: url('textures/wood_leaftype_unknown_z13.png'); }  
+    [zoom<=12] { polygon-pattern-file: url('textures/wood_leaftype_unknown_z12.png'); }  
   } 
   
   //landuse=grass is transformed into natural=grass, becouse of it's usage.
@@ -47,17 +47,22 @@ Map {
   }
   
   [landuse='allotments']{
-    [zoom>=16] {polygon-pattern-file: url('textures/allotments_z16.png');    }
-    [zoom=15]  {polygon-pattern-file: url('textures/allotments_z15.jpg');    }
-    [zoom<15]  {polygon-pattern-file: url('textures/allotments_z13.png');    }
+    [zoom>=17] {polygon-pattern-file: url('textures/allotments2_z17.png');    }
+    [zoom=16] {polygon-pattern-file: url('textures/allotments2_z16.png');    }
+    [zoom=15]  {polygon-pattern-file: url('textures/allotments2_z15.png');    }
+    [zoom=14]  {polygon-pattern-file: url('textures/allotments2_z14.png');    }
+    [zoom=13]  {polygon-pattern-file: url('textures/allotments2_z13.png');    }
+    [zoom=12]  {polygon-pattern-file: url('textures/allotments2_z12.png');    }
+    [zoom<=11]{ polygon-fill: #787D6B; }   
   }
+  
   [landuse='garages']{
-    //polygon-fill: #F55F54;
-    [zoom>=16]{polygon-pattern-file: url('textures/garages_z16.jpg');}
+    [zoom>=17]{polygon-pattern-file: url('textures/garages_z17.jpg');}
+    [zoom=16]{polygon-pattern-file: url('textures/garages_z16.jpg');}
     [zoom=15]{polygon-pattern-file: url('textures/garages_z15.jpg');}
     [zoom=14]{polygon-pattern-file: url('textures/garages_z14.jpg');}
     [zoom=13]{polygon-pattern-file: url('textures/garages_z13.jpg');}
-    [zoom<13]{ polygon-fill: #787D6B; }  
+    [zoom<=12]{ polygon-fill: #787D6B; }   
   }
   [landuse='quarry']{ 
     //polygon-fill: #bea175;  
@@ -66,7 +71,6 @@ Map {
     [zoom=14]{polygon-pattern-file: url('textures/quarry_z14.jpg');}
     [zoom=13]{polygon-pattern-file: url('textures/quarry_z13.jpg');}
     [zoom<=12]{polygon-pattern-file: url('textures/quarry_z12.jpg');}
-  	
   } 
   
 } 
@@ -145,7 +149,7 @@ Map {
   //polygon-pattern-gamma:1;
   //polygon-pattern-comp-op: soft-light;
 }
-#roads2{
+#roads2a{
     line-color: #829A8C; 
     
     //text-name: [highway]  + ' ' +  [surface];
