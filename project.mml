@@ -1,0 +1,209 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    38.5291,
+    56.5413,
+    7
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 4,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        38,
+        56,
+        39,
+        57
+      ],
+      "id": "osm",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\56_038.shp",
+        "id": "osm",
+        "project": "Antimap",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "osm"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        37.99990132193344,
+        55.99994609044806,
+        39.000098522002986,
+        57.000053875922745
+      ],
+      "id": "roads",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\higways-buffered.shp",
+        "id": "roads",
+        "project": "Antimap",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        20.4799478,
+        41.820926,
+        158.6487819,
+        69.9367993
+      ],
+      "id": "buildings",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\buildings.shp",
+        "id": "buildings",
+        "project": "Antimap",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "buildings"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        20.4861863,
+        44.8750374,
+        91.3947699,
+        64.4166734
+      ],
+      "id": "parkings",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\parkings.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "parkings"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.1557452,
+        42.4601665,
+        171.4883745,
+        75.5561358
+      ],
+      "id": "waterways",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\waterways.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "waterways"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        29.1382112,
+        45.1036982,
+        129.955228,
+        65.462866
+      ],
+      "id": "railways",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\railways.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "railways"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        22.5801551,
+        43.2300375,
+        142.9566338,
+        67.931008
+      ],
+      "id": "barriers",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\barriers.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "barriers"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        30.3641197,
+        44.4180478,
+        105.3437671,
+        60.0320528
+      ],
+      "id": "roadsarea",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\roads-area.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roadsarea"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        20.151341,
+        42.531184,
+        158.8468766,
+        71.7400033
+      ],
+      "id": "roads2",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\__3\\higways2.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads2"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Antimap",
+  "description": "Antimap of fake satellite",
+  "attribution": ""
+}
